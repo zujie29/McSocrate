@@ -1,0 +1,85 @@
+/* Style Messenger */
+
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4d2d2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: calc(100vh - 120px); /* Ajustez la hauteur en fonction de votre mise en page */
+}
+
+.message {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.sent {
+    background-color: #42b8b2;
+    color: white;
+    align-self: flex-end;
+}
+
+.received {
+    background-color: #a5cfe7;
+    color: black;
+    align-self: flex-start;
+}
+
+/* Style de la zone de réponse */
+.response {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 8px;
+    margin-right: 100px;
+    margin-left: 100px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* Style du timestamp */
+.timestamp {
+    position: fixed;
+    top: 10px;
+    left: 200px;
+    background-color: rgba(101, 128, 248, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Style du message d'attente */
+.waiting-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}

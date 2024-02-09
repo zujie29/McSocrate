@@ -1,0 +1,59 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Pour que le bouton puisse être positionné par rapport à ce conteneur */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Style pour les éléments "À faire" */
+.todo {
+    color: #28a745; /* Vert */
+}
+
+/* Style pour les éléments "À ne pas faire" */
+.not-todo {
+    color: #dc3545; /* Rouge */
+}
+
+/* Style pour le bouton "Faire le test" */
+#submitButton {
+    position: absolute;
+    bottom: 20px; /* Marge de 20px par rapport au bas */
+    right: 20px; /* Marge de 20px par rapport à la droite */
+    background-color: #28a745; /* Vert */
+    color: #fff; /* Texte blanc */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitButton:hover {
+    background-color: #216288; /* Vert plus foncé au survol */
+}
